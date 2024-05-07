@@ -1,11 +1,11 @@
-import os
-from pathlib import Path
+import os #operating system package for creating directories and folders
+from pathlib import Path #
 
 project_name="us_visa"
 
 list_of_files = [
 
-    f"{project_name}/__init__.py",
+    f"{project_name}/__init__.py",# constructor file this will install as the local package 
     f"{project_name}/components/__init__.py",
     f"{project_name}/components/data_ingestion.py",
     f"{project_name}/components/data_validation.py",
@@ -39,7 +39,7 @@ list_of_files = [
 
 for filepath in list_of_files:
     filepath = Path(filepath)
-    filedir, filename= os.path.split(filepath)
+    filedir, filename= os.path.split(filepath) # for separating folders and files
     if filedir != "":
         os.makedirs(filedir, exist_ok=True) 
     if (not os.path.exists(filepath)) or (os.path.getsize(filepath)==0):
