@@ -22,3 +22,19 @@ conda activate visa
 ```bash
 pip install -r requirements.txt
 ```
+
+# Workflow
+
+```bash
+1.Constant
+2.Config_Entity
+3.Artifact_Entity
+4.Component
+5.Pipeline
+6.app.py
+```
+
+# Setting the Environment Variables
+```bash
+export MONGOBD_URL="mongodb+srv://<username>:<password>..."
+```
