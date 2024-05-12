@@ -7,14 +7,13 @@ class DataIngestionArtifact:
     test_file_path:str 
 
 
-'''
 @dataclass
 class DataValidationArtifact:
     validation_status:bool
     message: str
     drift_report_file_path: str
 
-
+'''
 @dataclass
 class DataTransformationArtifact:
     transformed_object_file_path:str 
