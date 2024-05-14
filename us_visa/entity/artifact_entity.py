@@ -20,7 +20,7 @@ class DataTransformationArtifact:
     transformed_train_file_path:str
     transformed_test_file_path:str
 
-'''
+
 @dataclass
 class ClassificationMetricArtifact:
     f1_score:float
@@ -48,7 +48,7 @@ class ModelEvaluationArtifact:
 @dataclass
 class ModelPusherArtifact:
     bucket_name:str
-    s3_model_path:str'''
+    s3_model_path:str
 
 
 

@@ -20,7 +20,7 @@ class TargetValueMapping:
 
 
 
-'''class USvisaModel:
+class USvisaModel:
     def __init__(self, preprocessing_object: Pipeline, trained_model_object: object):
         """
         :param preprocessing_object: Input Object of preprocesser
@@ -52,4 +52,4 @@ class TargetValueMapping:
         return f"{type(self.trained_model_object).__name__}()"
 
     def __str__(self):
-        return f"{type(self.trained_model_object).__name__}()"'''
+        return f"{type(self.trained_model_object).__name__}()"
